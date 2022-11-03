@@ -17,3 +17,9 @@ func main() {
 	fmt.Println("The Result is := ", result)
 
 }
+
+func Square(x int) int {
+
+	result := x * x
+	return result
+}
