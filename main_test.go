@@ -5,7 +5,6 @@ import (
 )
 
 func TestCalculate(t *testing.T) {
-
 	if Calculate(2) != 4 {
 		t.Errorf("Expected 2 + 2 = 4 ")
 	}
@@ -19,6 +18,8 @@ func TestTableCalculate(t *testing.T) {
 		{2, 4},
 		{-1, 1},
 		{0, 2},
+		{10, 12},
+		{12, 14},
 	}
 	for _, tests := range tests {
 		if output := Calculate(tests.input); output != tests.expected {
